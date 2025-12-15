@@ -31,7 +31,9 @@ fun PreviewScreen(modifier: Modifier = Modifier) {
     }
 
     // 取得 ViewModel 中的分析結果
-    val analysisResult = previewViewModel.analysisResult
+    //val analysisResult = previewViewModel.analysisResult
+    val gestureResult = previewViewModel.gestureResult
+
 
     // 使用 DisposableEffect 來管理綁定與解綁
     DisposableEffect(lifecycleOwner, cameraController) {
@@ -66,7 +68,8 @@ fun PreviewScreen(modifier: Modifier = Modifier) {
 
         // 顯示圖像分析結果
         Text(
-            text = analysisResult,
+            //text = analysisResult,
+            text = gestureResult,
             modifier = Modifier
                 .background(Color.Yellow.copy(alpha = 0.5f)), // 設定半透明背景
             color = Color.Blue,

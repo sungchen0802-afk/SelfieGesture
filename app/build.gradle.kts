@@ -72,5 +72,8 @@ dependencies {
     implementation("androidx.camera:camera-extensions:$cameraxVersion")
     // CameraX VideoCapture (可選) - 用於錄影功能
     implementation("androidx.camera:camera-video:$cameraxVersion")
+    // MediaPipe Tasks Vision
+    implementation("com.google.mediapipe:tasks-vision:0.10.21")// 請檢查最新版本
+
 
 }
